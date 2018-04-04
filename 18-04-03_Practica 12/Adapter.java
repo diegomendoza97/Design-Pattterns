@@ -2,8 +2,8 @@ import java.util.*;
 public class Adapter implements Iterator{
 	Enumeration enumeration;
 
-	public Adapter(Vector vector){
-		enumeration = vector.elements();
+	public Adapter(Enumeration enume){
+		enumeration = enume;
 	}
 
 	public boolean hasNext(){

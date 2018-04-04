@@ -9,8 +9,9 @@ public class Main {
 			vector.add(i);
 		}
 
-		Adapter adapter = new Adapter(vector);
-		// setEnum(vector);
+		Enumeration enume = vector.elements();
+		Adapter adapter = new Adapter(enume);
+		
 		System.out.println("hasNext: "+ adapter.hasNext());
 		System.out.println("Next [0]: "+adapter.next());
 		System.out.print("Remove ");
